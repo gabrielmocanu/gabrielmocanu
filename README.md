@@ -13,7 +13,7 @@
 </a>
 
 <a href="https://github.com/gabrielmocanu">
-  <img align="center" width="49%" src="./iso_calender.svg" />
+  <img align="center" width="49%" src="./iso_calendar_full_year.svg" />
 </a>
 
 <a href="https://github.com/gabrielmocanu">
