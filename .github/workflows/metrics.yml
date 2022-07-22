@@ -72,7 +72,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: iso_calender.svg
+          filename: iso_calender_full_year.svg
           # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
@@ -84,7 +84,7 @@ jobs:
           base: ""
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
 
   habits:
     runs-on: ubuntu-latest
@@ -100,7 +100,7 @@ jobs:
           template: classic
           plugin_habits: yes
           plugin_habits_from: 200 # Use 200 events to compute habits
-          plugin_habits_days: 21 # Keep only events from last 21 days
+          plugin_habits_days: 30 # Keep only events from last 30 days
           plugin_habits_charts: yes # Display charts section
           plugin_habits_trim: yes # Trim unused hours on daily chart
 
@@ -139,3 +139,15 @@ jobs:
           template: classic
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  wakatime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+      with:
+        filename: wakatime.svg
+        token: NOT_NEEDED
+        base: ""
+        plugin_wakatime: yes
+        plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+        plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}

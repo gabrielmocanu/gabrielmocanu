@@ -27,3 +27,7 @@
 <a href="https://github.com/gabrielmocanu">
     <img align="center" width="49%" src="./achievements.svg" />
 </a>
+
+<a href="https://github.com/gabrielmocanu">
+    <img align="center" width="49%" src="./wakatime.svg" />
+</a>
