@@ -104,12 +104,12 @@ jobs:
           plugin_habits_charts: yes # Display charts section
           plugin_habits_trim: yes # Trim unused hours on daily chart
 
-  issue_pr_lang:
+  indepth_analysis:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: issue_pr_lang.svg
+          filename: indepth.svg
           # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
@@ -121,7 +121,7 @@ jobs:
           base: ""
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_followup: yes
-          plugin_languages: yes
+          plugin_followup_indepth: yes
 
   repositories:
     runs-on: ubuntu-latest
