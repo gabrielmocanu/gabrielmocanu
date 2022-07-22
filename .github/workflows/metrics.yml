@@ -155,7 +155,7 @@ jobs:
   topics_icons:
     runs-on: ubuntu-latest
     steps:
-      uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
           filename: topics_icons.svg
           token: NOT_NEEDED
@@ -167,7 +167,7 @@ jobs:
   stackoverflow:
     runs-on: ubuntu-latest
     steps:
-      uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@latest
         with:
           filename: stackoverflow.svg
           token: NOT_NEEDED
