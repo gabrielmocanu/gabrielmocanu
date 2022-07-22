@@ -35,3 +35,7 @@
 <a href="https://github.com/gabrielmocanu">
     <img align="center" width="49%" src="./topics_icons.svg" />
 </a>
+
+<a href="https://github.com/gabrielmocanu">
+    <img align="center" width="49%" src="./stackoverflow.svg" />
+</a>
