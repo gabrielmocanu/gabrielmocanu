@@ -183,7 +183,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: gists.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_SECRET }}
           base: ""
           plugin_gists: yes
 
@@ -193,7 +193,7 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           filename: notable.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_SECRET }}
           base: ""
           plugin_notable: yes
           plugin_notable_indepth: yes
