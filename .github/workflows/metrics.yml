@@ -192,7 +192,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: notable.svg
+          filename: contributions-indepth.svg
           token: ${{ secrets.METRICS_SECRET }}
           base: ""
           plugin_notable: yes
