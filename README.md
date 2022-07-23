@@ -43,3 +43,7 @@
 <a href="https://github.com/gabrielmocanu">
     <img align="center" width="49%" src="./gists.svg" />
 </a>
+
+<a href="https://github.com/gabrielmocanu">
+    <img align="center" width="49%" src="./notable.svg" />
+</a>

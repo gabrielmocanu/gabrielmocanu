@@ -186,3 +186,13 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_gists: yes
+
+  contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: notable.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_notable: yes
