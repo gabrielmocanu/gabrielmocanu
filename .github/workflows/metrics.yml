@@ -176,3 +176,13 @@ jobs:
           plugin_stackoverflow_user: 10588341
           plugin_stackoverflow_sections: answers-top
           plugin_stackoverflow_limit: 2
+
+  gists:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: gists.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_gists: yes
