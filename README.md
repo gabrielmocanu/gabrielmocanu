@@ -45,5 +45,5 @@
 </a>
 
 <a href="https://github.com/gabrielmocanu">
-    <img align="center" width="49%" src="./notable.svg" />
+    <img align="center" width="49%" src="./notable-indepth.svg" />
 </a>
