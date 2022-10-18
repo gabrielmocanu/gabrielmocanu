@@ -187,14 +187,14 @@ jobs:
           base: ""
           plugin_gists: yes
 
-  contributions:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: contributions-indepth.svg
-          token: ${{ secrets.METRICS_SECRET }}
-          base: ""
-          plugin_notable: yes
-          plugin_notable_indepth: yes
-          plugin_notable_repositories: yes
+  # contributions:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: contributions-indepth.svg
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         base: ""
+  #         plugin_notable: yes
+  #         plugin_notable_indepth: yes
+  #         plugin_notable_repositories: yes
